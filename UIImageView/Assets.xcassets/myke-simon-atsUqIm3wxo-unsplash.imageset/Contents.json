@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "myke-simon-atsUqIm3wxo-unsplash.jpg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "myke-simon-atsUqIm3wxo-unsplash-1.jpg",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "myke-simon-atsUqIm3wxo-unsplash-2.jpg",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
