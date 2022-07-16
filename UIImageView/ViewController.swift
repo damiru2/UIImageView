@@ -22,12 +22,19 @@ class ViewController: UIViewController {
 //
 //        imageView.image = image
         
-        let imageUrl = URL(string: "https://images.unsplash.com/photo-1571781565036-d3f759be73e4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80")!
+//        let imageUrl = URL(string: "https://images.unsplash.com/photo-1571781565036-d3f759be73e4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80")!
+//
+//        let data = try! Data(contentsOf: imageUrl)
+//        let image = UIImage(data: data)
+//
+//        imageView.image = image
         
-        let data = try! Data(contentsOf: imageUrl)
-        let image = UIImage(data: data)
+        
+        let image = UIImage.animatedImage(with: [UIImage(named: "1")!, UIImage(named: "2")!, UIImage(named: "3")!, UIImage(named: "4")!, UIImage(named: "5")!, UIImage(named: "6")!], duration: 12)
         
         imageView.image = image
+        
+        
     }
     
     
