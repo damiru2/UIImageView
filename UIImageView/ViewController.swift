@@ -30,14 +30,22 @@ class ViewController: UIViewController {
 //        imageView.image = image
         
         
-        let image = UIImage.animatedImage(with: [UIImage(named: "1")!, UIImage(named: "2")!, UIImage(named: "3")!, UIImage(named: "4")!, UIImage(named: "5")!, UIImage(named: "6")!], duration: 12)
+//        let image = UIImage.animatedImage(with: [UIImage(named: "1")!, UIImage(named: "2")!, UIImage(named: "3")!, UIImage(named: "4")!, UIImage(named: "5")!, UIImage(named: "6")!], duration: 12)
+//
+//        imageView.image = image
         
-        imageView.image = image
-        
-        
+        imageView.animationDuration = 24
+        imageView.animationImages = [UIImage(named: "1")!, UIImage(named: "2")!, UIImage(named: "3")!, UIImage(named: "4")!, UIImage(named: "5")!, UIImage(named: "6")!]
+        imageView.startAnimating()
+        animation()
     }
     
-    
+    func animation() {
+        UIView.animate(withDuration: 2, delay: 2, options: [.repeat, .autoreverse, .curveEaseIn], animations: {
+            self.imageView.alpha = 0
+        })
+
+    }
     
 
 }
